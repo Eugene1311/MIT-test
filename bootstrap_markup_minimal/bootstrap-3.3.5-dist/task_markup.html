@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MIT entrance task</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+    <h1>MIT entrance task</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Case one: hour unit intervals</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="fromHour">From:</label>
+              <input type="text" id="fromHour" class="form-control" placeholder="no minutes please">
+            </div>
+            <div class="form-group">
+              <label for="tillHour">Till:</label>
+              <input type="text" id="tillHour" class="form-control" placeholder="no minutes please">
+            </div>
+            <div class="form-group">
+              <label for="hourUnit">Unit of hour:</label>
+              <input type="text" id="hourUnit" class="form-control" placeholder="divider of 60 please">
+            </div>
+            <button class="btn btn-primary btn-block" id="createList">Create units list</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Case two: setting appointed intervals</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="appoint_string">Appointed units:</label>
+              <input type="text" id="appoint_string" class="form-control" placeholder="divided by comma please">
+            </div>
+            <button class="btn btn-primary btn-block" id="setUnits">Set appointed units</button>
+            <hr />
+            <div class="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--my script-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

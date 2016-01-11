@@ -1,0 +1,11 @@
+.add-block {
+	float: right;
+	margin: 30px 0 10px;
+}
+.row {
+	clear: both;
+	margin-bottom: 30px;
+}
+.delete-block {
+	float: right;
+}
